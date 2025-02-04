@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "NimbusSanL-Reg";
+    src: url("/public/ttf/NimbusSanL-Reg.otf");
+}
+body {
+    margin: 0; /* Обнуляем отступы */
+}
+.container {
+    display: flex; /* Создаем гибкую структуру */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    min-height: 100vh; /* Минимальная высота равна высоте вьюпорта */
+}
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    font-family: "NimbusSanL-Reg", serif;
+    background-color: rgba(88, 88, 88, 0.83);
+    color: white;
+    padding: 10px 0; /* Добавляет немного отступа сверху и снизу */
+}
+
+.footer-logo .logo {
+    width: 55%; /* Настройте размер логотипа по необходимости */
+}
+
+
+
+.footer-contacts p {
+
+    text-align: right;
+}

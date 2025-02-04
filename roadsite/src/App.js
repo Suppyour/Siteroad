@@ -1,4 +1,7 @@
+import './video.css';
+import './footer.css';
 import { useRef, useEffect } from 'react';
+import Footer from './Footer';
 
 function App() {
   const videoRef = useRef(null);
@@ -8,9 +11,8 @@ function App() {
     if (videoElement) {
       videoElement.muted = true;
       const playPromise = videoElement.play();
-
       if (playPromise !== undefined) {
-        playPromise.catch(error => {
+        playPromise.catch((error) => {
           console.error('Autoplay prevented:', error);
         });
       }
@@ -19,7 +21,6 @@ function App() {
 
   return (
       <div>
-        <img src="/logo192.png" alt="Logo" className="logo" />
         <header>
           <div className="menu">
             <a>Главная</a>
@@ -32,15 +33,44 @@ function App() {
           </div>
           <button className="btn">Заказать звонок</button>
         </header>
-        <div className="video">
-            <video autoPlay muted loop>
-                <source src="/media1.mp4" type="video/mp4"/>
-                Ваш браузер не поддерживает тег video.
-            </video>
-        </div>
-          <div>
+        <div className="general">
+          <div className="first">
+            <h1>ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
+              ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ
 
+            </h1>
           </div>
+        </div>
+        <div className="video">
+          <video ref={videoRef} autoPlay muted loop>
+            <source src="/background.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <Footer />
       </div>
   );
 }

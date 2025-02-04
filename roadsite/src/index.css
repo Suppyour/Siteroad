@@ -1,102 +1,85 @@
 @font-face {
-  font-family: "Deledda Open Light";
-  src: url("/public/Bowler.ttf");
+  font-family: "NimbusSanL-Reg";
+  src: url("/public/ttf/NimbusSanL-Reg.otf");
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: "Bowler", sans-serif;
+  font-size: 18pt;
+  margin: 0 0%;
+  font-family: "NimbusSanL-Reg", sans-serif; /* Меняй шрифт здесь */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-div {
-  margin: 0;
-  padding: 0;
-}
-
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
-
-/* --- LOGOTIP ---  */
-
-.logo {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1%;
-  transform: scale(65%);
 }
 
 /* --- HEADER ---  */
 header {
   display: flex;
+  width: 100%;
   height: 100px;
   place-items: center;
   text-align: center;
-  position: relative; /* Или fixed, если нужно закрепить заголовок при прокрутке */
+  position: fixed;
   z-index: 1; /* Значение должно быть больше, чем у видео */
-  width: 100%;
-  /* Дополнительные стили для фона и контента */
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(253, 177, 12, 0.74);
+  border-radius: 50px;
+  top: 10px; /* Устанавливает отступ сверху */
 }
 
+/* --- HEADER-MENU ---  */
 .menu {
   height: 100px;
   width: 100%;
   align-content: center;
+  margin: auto;
 }
 
 header a {
-  font-size: 18px;
-  font-weight: 500;
-  margin-right: 3%;
-  transition: 0,3s ease-in-out;
+  font-size: 24px;
+  margin-right: 5%;
   cursor: pointer;
 }
 
 header a:hover {
-  color: coral;
-  filter: drop-shadow(0px 0px 50px);
+  color: #FFC815;
+  filter: drop-shadow(0px 0px 0px);
 }
 
 .btn {
+  font-family: "NimbusSanL-Reg", sans-serif;
   height: 55px;
   width: 222px;
   border-radius: 55px;
-  background: #FDB10C;
+  background: #CE961E;
   border: none;
-  color: white;
+  color: black;
   font-weight: 500;
   font-size: 18px;
   transition: 0.5s ease-in-out;
   overflow: hidden;
-  margin-right: 2%;
+  margin-right: 1%;
   cursor: pointer;
   outline: none;
+
 }
 
 .btn:hover {
-  filter: drop-shadow(0px 0px 20px #ff74249f);
+  filter: drop-shadow(50px 0px 50px rgba(253, 177, 12, 0.74));
 }
 
+
+/* H1 - BLOCK */
+
+.general {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+  color: aliceblue;
+  border-radius: 50px;
+  background-color: rgba(253, 177, 12, 0.32);
+  margin-top: 10%; /* Добавьте достаточный отступ сверху */
+  margin-left: 5%;
+  margin-right: 5%;
+}

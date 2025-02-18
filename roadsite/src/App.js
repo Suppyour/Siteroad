@@ -2,6 +2,10 @@ import './video.css';
 import './footer.css';
 import { useRef, useEffect } from 'react';
 import Footer from './Footer';
+import Header from "./Header";
+import Logo from './Logo';
+import Content from "./Content";
+import NextBlock from "./NextBlock";
 
 function App() {
   const videoRef = useRef(null);
@@ -26,7 +30,11 @@ function App() {
             <source src="/background.mp4" type="video/mp4" />
           </video>
         </div>
-        <Footer />
+        <Logo/>
+        <Header/>
+        <Content/>
+        <NextBlock/>
+        <Footer/>
       </div>
   );
 }

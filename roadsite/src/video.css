@@ -1,16 +1,16 @@
 .video {
-    position: fixed; /* Фиксированное позиционирование относительно окна */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Чтобы другие элементы располагались поверх видео */
+    z-index: -1;
 }
 
 .video video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Чтобы видео заполняло контейнер без искажений */
+    object-fit: cover;
 }
 
 .video .overlay {

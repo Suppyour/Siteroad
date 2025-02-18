@@ -2,48 +2,48 @@
     font-family: "NimbusSanL-Reg";
     src: url("/public/ttf/NimbusSanL-Reg.otf");
 }
-footer {
+header {
+    position: relative;
     background-color: #FDB10C;
     height: 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 20px;
+    opacity: 0.8;
 }
 
-.footer-left,
-.footer-center,
-.footer-right {
+.header-left,
+.header-center,
+.header-right {
     display: flex;
     align-items: start;
 }
 
-.footer-left {
+.header-left {
     flex-direction: column;
     margin: 0 1%;
 }
 
-.footer-left p {
+.header-left p {
     color: #4A3E3E;
 }
 
-.footer-center nav {
+.header-center nav {
     display: flex;
-    gap: 45px; /* Расстояние между ссылками */
 }
 
-.footer-center nav a {
+.header-center nav a {
     color: #4A3E3E;
     text-decoration: none;
-    padding: 0;
-    text-align: center;
+    padding: 0 100px;
 }
 
-.footer-center nav a:hover {
+.header-center nav a:hover {
     text-decoration: underline;
 }
 
-.footer-right img {
+.header-right img {
     margin: 0 30%;
     height: 80px;
 }

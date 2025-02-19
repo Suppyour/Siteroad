@@ -1,26 +1,22 @@
 import React from 'react';
 import './header.css';
 
-
 function Header() {
     return (
         <header>
-            <div className="footer-left">
-                <p>atlas59@inbox.ru</p>
-                <p>+7(992) 227-82-04</p>
-            </div>
-            <div className="footer-center">
+
+            <div className="header-center">
                 <nav>
                     <a href="#">Главная</a>
                     <a href="#">Услуги</a>
                     <a href="#">Портфолио</a>
-                    <a href="#">Нормативные документы</a>
+                    <a href="#">Документы</a>
                     <a href="#">Контакты</a>
                     <a href="#">Оборудование</a>
                     <a href="#">Вакансии</a>
                 </nav>
             </div>
-            <div className="footer-right">
+            <div className="logoheader">
                 <img src="/logo/logo192.png" alt="Логотип"/>
             </div>
         </header>

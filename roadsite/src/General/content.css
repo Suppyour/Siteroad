@@ -1,0 +1,67 @@
+.content-container {
+    width: 100%;
+    height: 92vh;
+    margin: 0;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    border-radius: 1%;
+}
+
+.main-title {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: white;
+    margin: 0;
+    padding-left: 10%;
+}
+
+.text {
+    font-size: 2.5vw;
+    line-height: 1.5;
+    color: #D6D2D2;
+    text-align: left;
+    padding-left: 10%;
+}
+.highlight {
+    color: #FDB10C; /* тэг для автомобильных */
+}
+
+.button {
+    background-color: #FDB10C;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.5vw;
+    font-weight: bolder;
+    border-radius: 5vw;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    width: 15vw;
+    height: 4vw;
+    margin-top: 2vw;
+    margin-left: 10%;
+}
+
+.buttons-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button:hover {
+    background-color: #b08118;
+}
+
+.button:active {
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}

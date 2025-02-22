@@ -1,7 +1,7 @@
 import React from 'react';
-import './content.css';
+import './Home.css';
 
-function Content() {
+function Home() {
     return (
         <div className="content-container">
             <p className="main-title">
@@ -21,4 +21,4 @@ function Content() {
     );
 }
 
-export default Content;
+export default Home;

@@ -1,23 +1,23 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 
 function Header() {
     return (
         <header>
-
             <div className="header-center">
                 <nav>
-                    <a href="#">Главная</a>
-                    <a href="#">Услуги</a>
-                    <a href="#">Портфолио</a>
-                    <a href="#">Документы</a>
-                    <a href="#">Контакты</a>
-                    <a href="#">Оборудование</a>
-                    <a href="#">Вакансии</a>
+                    <Link to="/">Главная</Link>
+                    <Link to="/services">Услуги</Link>
+                    <Link to="/portfolio">Портфолио</Link>
+                    <Link to="/documents">Документы</Link>
+                    <Link to="/contacts">Контакты</Link>
+                    <Link to="/equipment">Оборудование</Link>
+                    <Link to="/vacancies">Вакансии</Link>
                 </nav>
             </div>
             <div className="logoheader">
-                <img src="/logo/logo192.png" alt="Логотип"/>
+                <img src="/logo/logo192.png" alt="Логотип" />
             </div>
         </header>
     );

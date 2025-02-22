@@ -1,9 +1,10 @@
 import React from 'react';
+import './Contacts.css';
 
 function Contacts() {
     return (
-        <div>
-            Это нормативные документы
+        <div className="dolbaeb">
+            Это контакты
         </div>
     );
 }

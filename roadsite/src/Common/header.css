@@ -1,6 +1,6 @@
 header {
     position: relative;
-    background-color: #FDB10C;
+    background-color: #585858;
     height: 9vh;
     display: flex;
     align-items: center;
@@ -37,7 +37,7 @@ header {
 .header-center nav a {
     display: flex;
     align-items: center;
-    color: #000000;
+    color: white;
     text-decoration: none;
     padding: 0 1.5vw;
     position: relative;

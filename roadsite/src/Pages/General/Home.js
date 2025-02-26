@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom';
 
 function Home() {
     return (
@@ -14,8 +15,8 @@ function Home() {
             <p className="text">Диагностика, контроль, безопасность</p>
 
             <div className="buttons-row">
-                <button className="button">заказать услугу</button>
-                <button className="button">наши услуги</button>
+                <Link to="/services" className="button">заказать услугу</Link>
+                <Link to="" className="button">наши услуги</Link>
             </div>
         </div>
     );

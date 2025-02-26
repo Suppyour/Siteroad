@@ -16,7 +16,7 @@ function Header() {
                     <Link to="/vacancies">Вакансии</Link>
                 </nav>
             </div>
-            <div className="logoheader">
+            <div className="logo-header">
                 <img src="/logo/logo192.png" alt="Логотип" />
             </div>
         </header>

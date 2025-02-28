@@ -5,7 +5,7 @@ import './Service.css';
 function Service() {
     return (
         <div className="background-service">
-            <div className="main">УСЛУГИ</div>
+            <h1 className="main">УСЛУГИ</h1>
             <div className="service">
                 <Block
                     title="ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ"

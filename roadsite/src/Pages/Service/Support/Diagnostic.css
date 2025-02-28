@@ -1,4 +1,23 @@
+.diagnostic {
+    background-color: white;
+    justify-content: center; /* горизонтальная центровка */
+    align-items: center; /* вертикальная центровка */
+}
+
+.white {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    margin: 0;
+    display: grid;
+    padding-left: 3.5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
 .photo {
+    padding-top: 500px;
     height: 50vh; /* Установите нужную высоту контейнера */
     overflow: hidden;
     position: relative;
@@ -13,21 +32,44 @@
     width: 93%;
 }
 
+.photo::before {
+    left: 3.5%;
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 20vh; /* Ширина границы */
+    background-color: orange; /* Цвет границы */
+    z-index: 1; /* Поверх фотографии */
+    padding-left: 3%;
+    opacity: 0.7;
+}
+
 .cursive {
     margin-top: 1%;
     margin-left: 3.5%;
-    width: 95%;
+    width: 93%;
     font-style: italic;
     position: relative;
     font-size: 4vh;
-    color: white;
-
+    color: black;
+    border-left: 1vh solid orange;
+    padding-left: 1%;
 }
 
 .black-text {
-    color: white;
+    font-size: 3vh;
+    color: black;
+    margin-left: 3.5%;
+    padding-top: 2%;
+    font-style: italic;
+    font-weight: initial;
 }
 
 .li {
-    color: white;
+    font-size: 3vh;
+    padding-top: 2%;
+    color: black;
+    margin-left: 5%;
+    padding-bottom: 2%;
 }

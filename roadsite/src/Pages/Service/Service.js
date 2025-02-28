@@ -11,6 +11,7 @@ function Service() {
                     title="ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ"
                     buttonText="ПОДРОБНЕЕ"
                     backgroundImage="photo/ServicePhoto/diagnos.jpg"
+                    linkTo="/Diagnostic"
                 />
                 <Block
                     title="ПАСПОРТИЗАЦИЯ АВТОМОБИЛЬНЫХ ДОРОГ"

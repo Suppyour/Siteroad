@@ -11,6 +11,7 @@ import Documents from './Pages/Documents/Documents';
 import Contacts from './Pages/Contacts/Contacts';
 import Equipment from './Pages/Equipment/Equipment';
 import Vacancies from './Pages/Vacancies/Vacancies';
+import Diagnostic from "./Pages/Service/Support/Diagnostic";
 
 function App() {
     const videoRef = useRef(null);
@@ -45,6 +46,7 @@ function App() {
                     <Route path="/contacts" element={<Contacts/>}/>
                     <Route path="/equipment" element={<Equipment/>}/>
                     <Route path="/vacancies" element={<Vacancies/>}/>
+                    <Route path="/diagnostic" element={<Diagnostic/>}/>
                 </Routes>
                 <Footer/>
             </div>

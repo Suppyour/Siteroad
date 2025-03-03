@@ -1,10 +1,30 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-
 function Home() {
+
+    const videoRef = useRef(null);
+
+    useEffect(() => {
+        const videoElement = videoRef.current;
+        if (videoElement) {
+            videoElement.muted = true;
+            const playPromise = videoElement.play();
+            if (playPromise !== undefined) {
+                playPromise.catch((error) => {
+                    console.error('Autoplay prevented:', error);
+                });
+            }
+        }
+    }, []);
+
     return (
         <div className="content-container">
+            <div className="video">
+                <video ref={videoRef} autoPlay muted loop>
+                    <source src="/background.mp4" type="video/mp4"/>
+                </video>
+            </div>
             <p className="main-title">
                 ДИАГНОСТИКА <span className="highlight">АВТОМОБИЛЬНЫХ</span>
             </p>

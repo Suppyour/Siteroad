@@ -14,6 +14,8 @@ import Diagnostic from "./Pages/Service/Support/diagnostic";
 import Passport from "./Pages/Service/Support/passport";
 import Georadar from "./Pages/Service/Support/georadar";
 import Monitoring from "./Pages/Service/Support/monitoring";
+import Axial from "./Pages/Service/Support/axial";
+import Ksodd from "./Pages/Service/Support/ksodd";
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
                 <Route path="/passport" element={<Passport/>}/>
                 <Route path="/georadar" element={<Georadar/>}/>
                 <Route path="/monitoring" element={<Monitoring/>}/>
+                <Route path="/axial_loads" element={<Axial/>}/>
+                <Route path="/ksodd" element={<Ksodd/>}/>
             </Routes>
             <Footer/>
         </Router>

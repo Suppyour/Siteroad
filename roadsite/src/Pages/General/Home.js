@@ -35,8 +35,8 @@ function Home() {
             <p className="text">Диагностика, контроль, безопасность</p>
 
             <div className="buttons-row">
-                <Link to="/services" className="button">заказать услугу</Link>
-                <Link to="" className="button">наши услуги</Link>
+                <Link to="" className="button">Заказать услугу</Link>
+                <Link to="/services" className="button">Наши услуги</Link>
             </div>
         </div>
     );

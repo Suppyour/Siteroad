@@ -3,7 +3,7 @@ import DiagnosticItem from "./DiagnosticItem";
 
 function Monitoring() {
     const diagnosticData4 = {
-        title: 'ГЕОРАДАРНОЕ ОБСЛЕДОВАНИЕ',
+        title: 'МОНИТОРИНГ ДОРОЖНОГО ДВИЖЕНИЯ',
         imageSrc: 'photo/ServicePhoto/monitor.png',
         imageAlt: 'Фото диагностики',
         description: `Мониторинг дорожного движения - это система сбора, обработки и анализа данных о транспортных потоках и условиях дорожного движения с целью оценки 

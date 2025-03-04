@@ -16,12 +16,12 @@ import Georadar from "./Pages/Service/Support/georadar";
 import Monitoring from "./Pages/Service/Support/monitoring";
 import Axial from "./Pages/Service/Support/axial";
 import Ksodd from "./Pages/Service/Support/ksodd";
+import Navbar from "./Common/Navbar";
 
 
 function App() {
-    return (
-        <Router>
-            <Header/>
+    return (<Router>
+            <Navbar/>
             <Routes>
                 <Route path="/" element={<Home/>}/>
                 <Route path="/services" element={<Services/>}/>
@@ -38,8 +38,7 @@ function App() {
                 <Route path="/ksodd" element={<Ksodd/>}/>
             </Routes>
             <Footer/>
-        </Router>
-    );
+        </Router>);
 }
 
 export default App;

@@ -1,0 +1,59 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5% 1%;
+    background-color: rgba(248, 248, 248, 0);
+    position: sticky;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-list {
+    display: flex;
+    list-style: none;
+    margin: 10%;
+}
+
+.navbar-logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #FDB10C;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navbar-button {
+    text-decoration: none;
+    padding: 0.75em 3em;
+    width: 13em;
+    height: 3em;
+    margin: 0 3%;
+    background-color: #FDB10C;
+    color: #fff;
+    border: none;
+    font-size: 0.8em;
+    cursor: pointer;
+    border-radius: 5em;
+    box-shadow: 10px 4px 8px rgba(0, 0, 0, 0.2); /* Добавляем тень */
+    transition: all 0.3s ease; /* Плавный переход для эффектов */
+}
+
+.navbar-button:hover {
+    background-color: #ffffff; /* Изменение цвета фона */
+    color: #000; /* Изменение цвета текста */
+    box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.3); /* Увеличиваем тень */
+    transform: scale(1.05); /* Небольшое увеличение кнопки */
+}
+
+.navbar-button:active {
+    transform: scale(0.95); /* Эффект "нажатия" */
+    box-shadow: 10px 2px 4px rgba(0, 0, 0, 0.2); /* Уменьшаем тень */
+}
+
+

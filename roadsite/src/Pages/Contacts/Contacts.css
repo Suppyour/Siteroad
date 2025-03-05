@@ -1,4 +1,16 @@
-.dolbaeb {
-    font-size: 24vh;
-    color: #666666;
+
+h1 {
+    font-size: 3rem;
+    margin-left: 0.8rem;
+}
+.cur {
+    font-size: 2rem;
+    font-style: italic;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+.list {
+    margin-left: 2rem;
+    list-style: none;
 }

@@ -2,7 +2,7 @@
     background-color: rgba(255, 255, 255, 1);
     justify-content: center; /* горизонтальная центровка */
     align-items: center; /* вертикальная центровка */
-    background-image: url("C:\Users\mpors\Desktop\Siteroad\roadsite\public\photo\road.jpg");
+    /*background-image: url("C:\Users\mpors\Desktop\Siteroad\roadsite\public\photo\road.jpg");*/
     background-size: cover;
 }
 

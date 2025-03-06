@@ -4,7 +4,7 @@ import DiagnosticItem from "./DiagnosticItem";
 function Georadar() {
     const diagnosticData3 = {
         title: 'ГЕОРАДАРНОЕ ОБСЛЕДОВАНИЕ',
-        imageSrc: 'photo/ServicePhoto/geodar.webp',
+        imageSrc: 'photo/ServicePhoto/geodar.png',
         imageAlt: 'Фото диагностики',
         description: `Георадарное обследование дорог - это метод неразрушающего контроля, который используется для получения информации о состоянии и структуре 
         дорожных покрытий, оснований и прилегающих территорий. В основе метода лежит использование георадара - прибора, который излучает радиоволны и 

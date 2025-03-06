@@ -2,9 +2,10 @@ import React from 'react';
 import DiagnosticItem from './DiagnosticItem';
 
 function Diagnostic() {
+
     const diagnosticData1 = {
         title: 'ДИАГНОСТИКА АВТОМОБИЛЬНЫХ ДОРОГ',
-        imageSrc: 'photo/ServicePhoto/diagnos.jpg',
+        imageSrc: 'photo/ServicePhoto/diagnos.png',
         imageAlt: 'Фото диагностики',
         description: `Диагностика автомобильных дорог включает в себя комплекс мероприятий по обследованию, оценке
       состояния дорожного полотна. Это позволяет определить текущее состояние дорог, выявить дефекты, а также разработать рекомендации по ремонту.`,

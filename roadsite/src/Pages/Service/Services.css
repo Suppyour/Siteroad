@@ -1,0 +1,75 @@
+.background-service {
+    background-color: rgba(255, 255, 255, 1);
+    justify-content: center; /* горизонтальная центровка */
+    align-items: center; /* вертикальная центровка */
+    background-image: url("C:\Users\mpors\Desktop\Siteroad\roadsite\public\photo\road.jpg");
+    background-size: cover;
+}
+
+.main {
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: left;
+    color: black;
+    margin: 0;
+    display: grid;
+    padding-left: 6%;
+    padding-top: 2%;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки */
+    gap: 10vh;
+    text-align: end;
+    padding: 1% 5% 3%;
+}
+
+.block {
+    padding: 2vh;
+    border: none;
+    background-color: #000000;
+    border-radius: 6vh;
+    width: 85vh;
+    height: 35vh;
+    position: relative;
+}
+
+.text-block {
+    text-align: end;
+    color: white;
+}
+
+.button-block {
+    background-color: #FDB10C;
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    font-size: 1.1vw;
+    font-weight: bolder;
+    border-radius: 2vw;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+    width: 10vw;
+    height: 3.5vw;
+    margin-top: 5vh;
+    margin-left: 10%;
+    position: absolute;
+    bottom: 4vh;
+    right: 2vw;
+}
+
+.button-block:hover {
+    background-color: #b08118;
+}
+
+.button-block:active {
+    background-color: rgba(0, 0, 0, 0.47);
+}
+
+.button-block:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}

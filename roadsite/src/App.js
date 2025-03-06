@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from './Common/Footer';
 import Header from './Common/Header';
 import Home from './Pages/General/Home';
-import Services from './Pages/Service/Service';
+import Services from './Pages/Service/Services';
 import Portfolio from './Pages/Portfolio/Portfolio';
 import Documents from './Pages/Documents/Documents';
 import Contacts from './Pages/Contacts/Contacts';

@@ -2,7 +2,6 @@ import './Common/video.css';
 import './Common/footer.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Footer from './Common/Footer';
-import Header from './Common/Header';
 import Home from './Pages/General/Home';
 import Services from './Pages/Service/Services';
 import Portfolio from './Pages/Portfolio/Portfolio';

@@ -14,9 +14,9 @@ function Footer() {
             </div>
             <div className="contact-info">
                 <div className="social-icons">
-                    <img src="/icons/telegram.png" alt="Telegram" />
-                    <img src="/icons/whatsapp.png" alt="WhatsApp" />
-                    <span>+7 (123) 456-78-90</span>
+                    <img src="/logo/telegram.png" alt="Telegram" />
+                    <img src="/logo/whatsapp.png" alt="WhatsApp" />
+                    <>+7 (123) 456-78-90</>
                 </div>
                 <p>example@example.com</p>
             </div>

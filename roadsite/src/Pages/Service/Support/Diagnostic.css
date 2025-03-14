@@ -1,7 +1,7 @@
 .diagnostic {
     background-color: white;
-    justify-content: center; /* горизонтальная центровка */
-    align-items: center; /* вертикальная центровка */
+    justify-content: center;
+    align-items: center;
 }
 
 .white {
@@ -18,7 +18,7 @@
 
 .photo {
     padding-top: 500px;
-    height: 50vh; /* Установите нужную высоту контейнера */
+    height: 50vh;
     overflow: hidden;
     position: relative;
     margin-bottom: 1%;
@@ -40,9 +40,9 @@
     position: absolute;
     top: 0;
     height: 100%;
-    width: 20vh; /* Ширина границы */
-    background-color: orange; /* Цвет границы */
-    z-index: 1; /* Поверх фотографии */
+    width: 20vh;
+    background-color: orange;
+    z-index: 1;
     padding-left: 3%;
     opacity: 0.7;
 }

@@ -1,26 +1,24 @@
 import React from 'react';
 import './footer.css';
-import {Link} from "react-router-dom";
 
 function Footer() {
     return (
         <footer>
-            <div className="footer-left">
-                {/* Контактная информация */}
-                <p>atlas59@inbox.ru</p>
-                <p>+7(992) 227-82-04</p>
-            </div>
             <div className="footer-center">
-                {/* Навигационные ссылки */}
                 <nav>
-                    <Link to="/">Главная</Link>
-                    <Link to="/">Главная</Link>
-                    <Link to="/">Главная</Link>
-                    <Link to="/">Главная</Link>
+                    <a href="/">Главная</a>
+                    <a href="/vacancies">Вакансии</a>
+                    <a href="/gallery">Галерея</a>
+                    <a href="/equipment">Оборудование</a>
                 </nav>
             </div>
-            <div className="footer-right">
-                <img src="/logo/logo192.png" alt="Логотип"/>
+            <div className="contact-info">
+                <div className="social-icons">
+                    <img src="/icons/telegram.png" alt="Telegram" />
+                    <img src="/icons/whatsapp.png" alt="WhatsApp" />
+                    <span>+7 (123) 456-78-90</span>
+                </div>
+                <p>example@example.com</p>
             </div>
         </footer>
     );

@@ -1,8 +1,18 @@
+body {
+    background-image: url("lines1.jpg");
+    background-size: cover; /* масштабирует изображение, чтобы покрыть всю страницу */
+    background-repeat: no-repeat; /* предотвращает повторение изображения */
+    background-attachment: fixed; /* делает фон статичным при прокрутке */
+}
+.contacts{
+    height: 73vh;
+}
 
 h1 {
     font-size: 3rem;
     margin-left: 0.8rem;
 }
+
 .cur {
     font-size: 2rem;
     font-style: italic;
@@ -10,6 +20,7 @@ h1 {
     margin-bottom: 2rem;
     margin-left: 2rem;
 }
+
 .list {
     margin-left: 2rem;
     list-style: none;

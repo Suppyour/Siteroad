@@ -1,8 +1,6 @@
 .background-service {
-    background-color: rgba(255, 255, 255, 1);
     justify-content: center; /* горизонтальная центровка */
     align-items: center; /* вертикальная центровка */
-    background-image: url("road.jpg");
     background-size: cover;
 }
 
@@ -14,7 +12,7 @@
     margin: 0;
     display: grid;
     padding-left: 6%;
-    padding-top: 2%;
+    padding-top: 1%;
 }
 
 .service {

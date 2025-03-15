@@ -1,0 +1,32 @@
+.document-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+}
+
+.card {
+    width: 30vh;
+    height: 30vh;
+    border: 0.1vh solid #ddd;
+    border-radius: 1vh ;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}

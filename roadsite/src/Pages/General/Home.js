@@ -1,10 +1,12 @@
-import React, {useEffect, useRef} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import './Home.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+import Modal from "../../Common/Modal/Modal";
+
 function Home() {
 
     const videoRef = useRef(null);
-
+    const [modalActive, setModalActive] = useState(false);
     useEffect(() => {
         const videoElement = videoRef.current;
         if (videoElement) {
@@ -20,6 +22,7 @@ function Home() {
 
     return (
         <div className="content-container">
+            <Modal active={modalActive} setActive={setModalActive}/>
             <div className="video">
                 <video ref={videoRef} autoPlay muted loop>
                     <source src="/background.mp4" type="video/mp4"/>
@@ -35,7 +38,7 @@ function Home() {
             <p className="text">Диагностика, контроль, безопасность</p>
 
             <div className="buttons-row">
-                <Link to="" className="button">Заказать услугу</Link>
+                <button className="button" onClick={() => setModalActive(true)}>Заказать услугу</button>
                 <Link to="/services" className="button">Наши услуги</Link>
             </div>
         </div>

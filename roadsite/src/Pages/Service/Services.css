@@ -8,7 +8,7 @@
     font-size: 3vw;
     font-weight: bold;
     text-align: left;
-    color: black;
+    color: #FDB10C;
     margin: 0;
     display: grid;
     padding-left: 6%;
@@ -26,7 +26,7 @@
 .block {
     padding: 2vh;
     border: none;
-    background-color: #000000;
+    background-image: none;
     border-radius: 6vh;
     width: 85vh;
     height: 35vh;

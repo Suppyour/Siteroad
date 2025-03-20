@@ -16,6 +16,8 @@ import Monitoring from "./Pages/Service/Support/monitoring";
 import Axial from "./Pages/Service/Support/axial";
 import Ksodd from "./Pages/Service/Support/ksodd";
 import Navbar from "./Common/Navbar";
+import Modal from "./Common/Modal/Modal";
+import React from "react";
 
 
 function App() {

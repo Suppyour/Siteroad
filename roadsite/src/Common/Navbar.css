@@ -30,8 +30,9 @@
 }
 
 .navbar-button {
+    text-align: center;
     text-decoration: none;
-    padding: 0.75em 3.8em;
+    padding: 0.8em 3.8em;
     width: 13em;
     height: 3em;
     margin: 0 3%;

@@ -7,7 +7,6 @@ function Footer() {
             <nav className="footer-nav">
                 <a href="/">Главная</a>
                 <a href="/vacancies">Вакансии</a>
-                <a href="/gallery">Галерея</a>
                 <a href="/equipment">Оборудование</a>
                 <div className="social-icons">
                     <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
@@ -18,7 +17,7 @@ function Footer() {
                     </a>
                 </div>
                 <ul className="contact-list">
-                    <li><a href="https://web.telegram.org/k/">7 (123) 456-78-90</a></li>
+                    <li><a href="https://web.telegram.org/k/">+7 (123) 456-78-90</a></li>
                     <li><a href="mailto:example@example.com">example@example.com</a></li>
                 </ul>
             </nav>

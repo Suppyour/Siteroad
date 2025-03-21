@@ -1,11 +1,15 @@
 body {
-    background-image: url("backgroundPhoto.png");
+    background-image: url("lines1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .contacts{
     height: 73vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {

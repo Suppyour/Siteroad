@@ -14,7 +14,6 @@ const Modal = ({active, setActive, children}) => {
 <a>Че хотите по услугам</a>
                     <input type="text"></input>
                     <a>Номерок запиши сюда</a>
-
                     <input type="text"></input>
                     <input type="text"></input>
                     <input type="text"></input>

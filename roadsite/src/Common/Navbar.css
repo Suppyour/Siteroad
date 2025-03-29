@@ -20,13 +20,16 @@
     margin: 0;
 }
 
-.navbar-logo {
-    margin: 23%;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #fdb10c;
-    flex-grow: 1;
-    text-align: center;
+.navbar-logo{
+    
+}
+
+.navbar-logo img {     /* Задаёт ширину изображения */
+    height: auto;        /* Высота будет подстраиваться пропорционально */
+    display: block;      /* Превращает <img> в блочный элемент для работы с margin */
+    margin: 0 auto;      /* Центрирует изображение по горизонтали */
+    object-fit: contain;
+    margin-left: auto/* Изображение полностью вписывается в контейнер без потери пропорций */
 }
 
 .navbar-button {

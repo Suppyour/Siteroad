@@ -1,0 +1,38 @@
+.section{
+    padding: 60px;
+}
+
+.regions-container{
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 0 1vw;
+}
+
+.cards-regions {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-region{
+    border-radius: 50px;
+    background: #FDB10C;
+}
+
+.card-image{
+    width: 400px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.card-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}

@@ -1,10 +1,11 @@
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Выравнивание по центру родительского контейнера */
     align-items: center;
     padding: 0.5% 1%;
     background-color: rgba(248, 248, 248, 0);
-    position: sticky;
+    position: relative;
+    top: 0;
 }
 
 .navbar-nav {
@@ -12,24 +13,34 @@
     align-items: center;
     width: 100%;
     height: 10vh;
+    /* Распределяет дочерние элементы по краям */
+    justify-content: space-between;
 }
 
 .navbar-list {
     display: flex;
     list-style: none;
     margin: 0;
+    padding: 0;
+    flex: 1; /* Заставляет список занимать всё доступное пространство */
+    justify-content: space-evenly; /* Равномерное распределение ссылок */
 }
 
-.navbar-logo{
-    
+.navbar-list li {
+    display: flex;
+    align-items: center;
 }
 
-.navbar-logo img {     /* Задаёт ширину изображения */
-    height: auto;        /* Высота будет подстраиваться пропорционально */
-    display: block;      /* Превращает <img> в блочный элемент для работы с margin */
-    margin: 0 auto;      /* Центрирует изображение по горизонтали */
+.navbar-logo {
+    margin-left: auto; /* Смещает логотип вправо */
+    width: 15vw;
+}
+
+.navbar-logo img {
+    max-width: 15vw; /* Можно настроить нужный размер логотипа */
+    height: auto;
+    display: block;
     object-fit: contain;
-    margin-left: auto/* Изображение полностью вписывается в контейнер без потери пропорций */
 }
 
 .navbar-button {
@@ -60,7 +71,3 @@
     transform: scale(0.95);
     box-shadow: 10px 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-
-
-

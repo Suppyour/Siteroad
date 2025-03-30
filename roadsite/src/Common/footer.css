@@ -1,20 +1,17 @@
 .footer {
-    position: relative;
     background-color: #FDB10C;
     padding: 10px 9%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .footer-nav {
     display: flex;
-    justify-content: center; /* Центрирование элементов */
-    align-items: center;    /* Выравнивание элементов по центру */
-    gap: 20vh;              /* Расстояние между блоками (можно менять значение) */
-
+    justify-content: center;
+    align-items: center;
+    gap: 20vh;
 }
 
 .footer-nav a {
@@ -47,7 +44,6 @@
     height: 24px;
     transition: transform 0.3s ease;
 }
-
 
 .contact-list {
     list-style: none;

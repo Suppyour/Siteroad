@@ -3,7 +3,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: 'Bowler', Geneva, Tahoma, sans-serif;
 }
 .contacts{
     height: 73vh;
@@ -30,4 +29,10 @@ h1 {
 .list {
     margin-left: 2rem;
     list-style: none;
+}
+
+.contacts li,
+.contacts ul,
+.contacts p {
+    color: white;
 }

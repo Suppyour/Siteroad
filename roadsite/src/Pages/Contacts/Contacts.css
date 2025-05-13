@@ -36,3 +36,42 @@ h1 {
 .contacts p {
     color: white;
 }
+
+@media (max-width: 768px) {
+    .contacts {
+        height: auto;
+        padding: 20px 10px;
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cur {
+        font-size: 1.5rem;
+        margin: 2rem 0 1rem;
+        text-align: center;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .list {
+        margin-left: 0;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
+    .contacts li {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    a {
+        word-break: break-word;
+    }
+}

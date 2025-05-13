@@ -30,3 +30,19 @@
 .card a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    .document-container {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: center;
+        gap: 4vh;
+    }
+
+    .card {
+        width: 80vw;
+        height: 20vh;
+        font-size: 4vw;
+        padding: 4vh;
+    }
+}

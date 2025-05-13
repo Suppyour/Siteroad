@@ -69,3 +69,29 @@
     font-weight: bold;
     margin-top: 1.5vh;
 }
+
+@media (max-width: 768px) {
+    .modal__content {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        border-radius: 1.5rem;
+    }
+
+    .form-container {
+        gap: 2vh;
+    }
+
+    .form-input,
+    .form-select,
+    .form-button {
+        height: 5.5vh;
+        font-size: 4vw;
+        border-radius: 1.5vh;
+    }
+
+    .centered-title {
+        font-size: 5vw;
+        margin-top: 1vh;
+    }
+}

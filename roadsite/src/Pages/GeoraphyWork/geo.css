@@ -23,8 +23,9 @@
 }
 
 .card-image{
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
     display: block;
     margin: 0 auto;
 
@@ -35,4 +36,32 @@
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding: 30px 10px;
+    }
+
+    .card-title {
+        font-size: 22px;
+    }
+
+    .card-image {
+        max-width: 200px;
+    }
+
+    .cards-regions {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Центровка карточек */
+        gap: 20px;
+    }
+
+    .card-region {
+        padding: 15px;
+        border-radius: 30px;
+        max-width: 300px;
+        width: 100%;
+    }
 }

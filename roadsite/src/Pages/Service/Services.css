@@ -71,3 +71,41 @@
     color: #666666;
     cursor: not-allowed;
 }
+
+@media (max-width: 768px) {
+    .main {
+        font-size: 6vw;
+        text-align: center;
+        padding-left: 0;
+        padding-top: 2vh;
+    }
+
+    .service {
+        grid-template-columns: 1fr; /* Одна колонка */
+        gap: 5vh;
+        padding: 2% 4%;
+    }
+
+    .block {
+        width: 100%;
+        height: 30vh;
+        border-radius: 3vh;
+    }
+
+    .text-block {
+        font-size: 4vw;
+        text-align: center;
+        padding: 0 5%;
+    }
+
+    .button-block {
+        font-size: 4vw;
+        width: 40vw;
+        height: 8vw;
+        border-radius: 5vw;
+        right: 50%;
+        transform: translateX(50%);
+        bottom: 2vh;
+        margin-left: 0;
+    }
+}

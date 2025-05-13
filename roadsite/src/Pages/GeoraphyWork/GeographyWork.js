@@ -11,11 +11,10 @@ function GeographyWork() {
                             <li className="card-region">
                                 <div className="card-content">
                                     <h3 className="card-title">Ростовская</h3>
-                                    <img className
+                                    <img
                                          src="/emblem/rostov.png"
                                          alt="Эмблема Ростовской области"
                                          className="card-image"
-                                         style={{ width: '400px', height: '400px'}}
                                     />
                                     <h3 className="card-title">Область</h3>
                                 </div>

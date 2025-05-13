@@ -73,3 +73,49 @@
     padding-bottom: 2%;
     color: white;
 }
+
+@media (max-width: 768px) {
+  .white {
+    font-size: 6vw;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .photo {
+    padding-top: 30vw;
+    height: auto;
+    margin-bottom: -30%;
+  }
+
+  .photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .photo::before {
+    width: 10vw;
+    height: 65.4%;
+    left: 0;
+  }
+
+  .cursive {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 4.5vw;
+    padding-left: 4%;
+    border-left: 2vw solid orange;
+  }
+
+  .black-text {
+    font-size: 4.5vw;
+    margin-left: 5%;
+    padding-right: 5%;
+  }
+
+  .li {
+    font-size: 4vw;
+    margin-left: 8%;
+    padding-right: 5%;
+  }
+}

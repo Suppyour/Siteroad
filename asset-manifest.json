@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/Siteroad/static/css/main.b7a98890.css",
+    "main.js": "/Siteroad/static/js/main.e6f5d66f.js",
+    "static/media/Passport.pdf": "/Siteroad/static/media/Passport.119f155a10a1b8af25a8.pdf",
+    "static/media/PODD.pdf": "/Siteroad/static/media/PODD.a3739a8c32e3cd3eb7dc.pdf",
+    "static/media/background.png": "/Siteroad/static/media/background.c7614144ea7921a40e51.png",
+    "static/media/Technical_otchet.pdf": "/Siteroad/static/media/Technical_otchet.04a8196e4299fb307144.pdf",
+    "static/media/backgroundPhoto.png": "/Siteroad/static/media/backgroundPhoto.eac27d1ee745fe827814.png",
+    "static/media/NimbusSanL-Reg.otf": "/Siteroad/static/media/NimbusSanL-Reg.a520cb1a50f044f5d58c.otf",
+    "index.html": "/Siteroad/index.html",
+    "main.b7a98890.css.map": "/Siteroad/static/css/main.b7a98890.css.map",
+    "main.e6f5d66f.js.map": "/Siteroad/static/js/main.e6f5d66f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7a98890.css",
+    "static/js/main.e6f5d66f.js"
+  ]
+}

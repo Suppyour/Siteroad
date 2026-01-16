@@ -23,8 +23,13 @@ function MainLayout() {
     const location = useLocation();
     const isHome = location.pathname === '/';
 
+    // Inline style with dynamic path to background image
+    const bgStyle = !isHome
+        ? { backgroundImage: `url(${process.env.PUBLIC_URL}/photo/backgroundPhoto.png)` }
+        : {};
+
     return (
-        <div className={`page-container ${!isHome ? 'global-bg' : ''}`}>
+        <div className={`page-container ${!isHome ? 'global-bg' : ''}`} style={bgStyle}>
             <main className="content">
                 <Navbar />
                 <Routes>
@@ -50,7 +55,8 @@ function MainLayout() {
 
 function App() {
     return (
-        <Router>
+        // Set basename for GitHub Pages deployment
+        <Router basename={process.env.PUBLIC_URL}>
             <MainLayout />
         </Router>
     );

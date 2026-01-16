@@ -14,7 +14,7 @@
 
 /* Background for all pages EXCEPT Home */
 .page-container.global-bg {
-    background-image: url('./Pages/General/backgroundPhoto.png');
+    /* Image is set via inline style in App.js for correct path resolution */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

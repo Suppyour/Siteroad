@@ -1,48 +1,67 @@
-.document-container {
+.documents-wrapper {
+    padding: 2rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.documents-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.document-card {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-    justify-content: center;
-}
-
-.card {
-    width: 30vh;
-    height: 30vh;
-    border: 0.1vh solid #ddd;
-    border-radius: 1vh ;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    background-color: #fff;
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.card a {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
     text-decoration: none;
-    color: black;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.document-card .doc-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    transition: transform 0.3s ease;
+}
+
+.document-card:hover .doc-icon {
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.document-card .doc-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    max-width: 90%;
+}
+
+.document-card .doc-action {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
     font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.card a:hover {
-    text-decoration: underline;
+.document-card .arrow {
+    margin-left: 0.5rem;
+    transition: transform 0.3s;
 }
 
-@media (max-width: 768px) {
-    .document-container {
-        margin-top: 20px;
-        flex-direction: column;
-        align-items: center;
-        gap: 4vh;
-    }
+.document-card:hover .arrow {
+    transform: translateX(5px);
+}
 
-    .card {
-        width: 80vw;
-        height: 20vh;
-        font-size: 4vw;
-        padding: 4vh;
+@media (max-width: 600px) {
+    .documents-grid {
+        grid-template-columns: 1fr;
     }
 }

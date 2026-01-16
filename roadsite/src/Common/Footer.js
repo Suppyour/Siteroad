@@ -25,8 +25,8 @@ const Footer = () => {
                     </a>
                 </div>
                 <ul className="contact-list">
-                    <li><a href="https://web.telegram.org/k/">+7 (123) 456-78-90</a></li>
-                    <li><a href="mailto:example@example.com">example@example.com</a></li>
+                    <li><a href="https://web.telegram.org/k/">+8 (965) 569-69-98</a></li>
+                    <li><a href="mailto:example@example.com">reznikovm@inbox.ru</a></li>
                 </ul>
             </nav>
         </footer>

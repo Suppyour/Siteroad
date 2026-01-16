@@ -3,7 +3,7 @@ import DiagnosticItem from "./DiagnosticItem";
 
 function Axial() {
     const diagnosticData5 = {
-        title: 'ОПРЕДЕЛЕНИЕ ДОПУСТИМЫХ ОСЕВЫХ НАГРУЗОК АВТОТРАНСПОРТНЫХ СЕРДСТВ НА ОСНОВАНИИИ ОЦЕНКИ ПРОЧНОСТИ НЕЖЕСТКИХ ДОРОЖНЫХ ОДЕЖД АВТОМОБИЛЬНЫХ ДОРОГ.',
+        title: 'ОПРЕДЕЛЕНИЕ ДОПУСТИМЫХ ОСЕВЫХ НАГРУЗОК',
         imageSrc: process.env.PUBLIC_URL + '/photo/ServicePhoto/osevoe.png',
         imageAlt: 'Фото диагностики',
         description: `Определение допустимых осевых нагрузок автотранспортных средств на основании оценки прочности нежестких дорожных 

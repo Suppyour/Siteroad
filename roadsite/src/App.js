@@ -26,7 +26,20 @@ function MainLayout() {
     const location = useLocation();
     const isHome = location.pathname === '/';
 
-    // Inline style with dynamic path to background image
+    // Set global body background (replaces black transition background)
+    React.useLayoutEffect(() => {
+        const bgUrl = `${SITE_URL}/Assets/background.png`;
+        document.body.style.backgroundImage = `url(${bgUrl})`;
+        document.body.style.backgroundSize = 'cover';
+        document.body.style.backgroundAttachment = 'fixed';
+        document.body.style.backgroundPosition = 'center';
+        document.body.style.backgroundRepeat = 'no-repeat';
+        // Ensure strictly no overflow on body to avoid scrollbar jitter
+        document.body.style.overflowX = 'hidden';
+    }, []);
+
+    // Inline style with dynamic path to background image (for page container)
+    // We keep this if you still want the specific page background on top
     const bgStyle = !isHome
         ? { backgroundImage: `url(${SITE_URL}/photo/backgroundPhoto.png)` }
         : {};

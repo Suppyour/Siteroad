@@ -9,31 +9,31 @@ const regionsData = [
     { name: "Самарская область", emblem: `${SITE_URL}/emblem/samara.png`, alt: "Эмблема Самарской области" },
 ];
 
-function GeographyWork() {
+const GeographyWork = () => {
     return (
-        <main>
-            <section className="section">
-                <article>
-                    <div className="regions-container">
-                        <ul className="cards-regions">
-                            {regionsData.map((region, index) => (
-                                <li className="card-region" key={index}>
-                                    <div className="card-content">
-                                        <h3 className="card-title">{region.name.replace(' область', '')}</h3>
-                                        <img
-                                            src={region.emblem}
-                                            alt={region.alt}
-                                            className="card-image"
-                                        />
-                                        <h3 className="card-title">Область</h3>
-                                    </div>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                </article>
-            </section>
-        </main>
+        <div className="geo-wrapper">
+            <h1 className="main-title-glass">ГЕОГРАФИЯ РАБОТ</h1>
+
+            <ul className="geo-grid">
+                {regionsData.map((region, index) => (
+                    <li className="glass-card geo-card" key={index}>
+                        <div className="card-content">
+                            <div className="emblem-wrapper">
+                                <img
+                                    src={region.emblem}
+                                    alt={region.alt}
+                                    className="card-image"
+                                />
+                            </div>
+                            <h3 className="card-title">
+                                {region.name.replace(' область', '')}
+                                <span className="region-suffix">Область</span>
+                            </h3>
+                        </div>
+                    </li>
+                ))}
+            </ul>
+        </div>
     );
 }
 

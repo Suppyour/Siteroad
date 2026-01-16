@@ -2,7 +2,6 @@
   "name": "roadsite",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Suppyour.github.io/Siteroad",
   "dependencies": {
     "@chakra-ui/react": "^3.13.0",
     "@emotion/react": "^11.14.0",

@@ -18,6 +18,9 @@ import Navbar from "./Common/Navbar";
 import GeographyWork from "./Pages/GeoraphyWork/GeographyWork";
 import React from "react";
 import './App.css';
+import { SITE_URL } from './constants';
+import { AnimatePresence } from 'framer-motion';
+import PageTransition from './Common/PageTransition';
 
 function MainLayout() {
     const location = useLocation();
@@ -25,28 +28,32 @@ function MainLayout() {
 
     // Inline style with dynamic path to background image
     const bgStyle = !isHome
-        ? { backgroundImage: `url(${process.env.PUBLIC_URL}/photo/backgroundPhoto.png)` }
+        ? { backgroundImage: `url(${SITE_URL}/photo/backgroundPhoto.png)` }
         : {};
 
     return (
         <div className={`page-container ${!isHome ? 'global-bg' : ''}`} style={bgStyle}>
             <main className="content">
-                <Navbar />
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/services" element={<Services />} />
-                    <Route path="/portfolio" element={<Portfolio />} />
-                    <Route path="/documents" element={<Documents />} />
-                    <Route path="/contacts" element={<Contacts />} />
-                    <Route path="/vacancies" element={<Vacancies />} />
-                    <Route path="/diagnostic" element={<Diagnostic />} />
-                    <Route path="/passport" element={<Passport />} />
-                    <Route path="/georadar" element={<Georadar />} />
-                    <Route path="/monitoring" element={<Monitoring />} />
-                    <Route path="/axial_loads" element={<Axial />} />
-                    <Route path="/ksodd" element={<Ksodd />} />
-                    <Route path="/regions" element={<GeographyWork />} />
-                </Routes>
+                <AnimatePresence mode="wait">
+                    <PageTransition key={location.pathname}>
+                        <Navbar />
+                        <Routes location={location}>
+                            <Route path="/" element={<Home />} />
+                            <Route path="/services" element={<Services />} />
+                            <Route path="/portfolio" element={<Portfolio />} />
+                            <Route path="/documents" element={<Documents />} />
+                            <Route path="/contacts" element={<Contacts />} />
+                            <Route path="/vacancies" element={<Vacancies />} />
+                            <Route path="/diagnostic" element={<Diagnostic />} />
+                            <Route path="/passport" element={<Passport />} />
+                            <Route path="/georadar" element={<Georadar />} />
+                            <Route path="/monitoring" element={<Monitoring />} />
+                            <Route path="/axial_loads" element={<Axial />} />
+                            <Route path="/ksodd" element={<Ksodd />} />
+                            <Route path="/regions" element={<GeographyWork />} />
+                        </Routes>
+                    </PageTransition>
+                </AnimatePresence>
             </main>
             <Footer />
         </div>
@@ -55,8 +62,8 @@ function MainLayout() {
 
 function App() {
     return (
-        // Set basename for GitHub Pages deployment
-        <Router basename={process.env.PUBLIC_URL}>
+        // Set basename from constants
+        <Router basename={SITE_URL}>
             <MainLayout />
         </Router>
     );

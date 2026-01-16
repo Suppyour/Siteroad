@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
 import Modal from "../../Common/Modal/Modal";
+import { SITE_URL } from '../../constants';
 
 function Home() {
 
@@ -26,7 +27,7 @@ function Home() {
             <Modal active={modalActive} setActive={setModalActive} />
             <div className="video-background">
                 <video ref={videoRef} autoPlay muted loop playsInline>
-                    <source src={`${process.env.PUBLIC_URL}/background.mp4`} type="video/mp4" />
+                    <source src={`${SITE_URL}/background.mp4`} type="video/mp4" />
                 </video>
                 <div className="video-overlay"></div>
             </div>

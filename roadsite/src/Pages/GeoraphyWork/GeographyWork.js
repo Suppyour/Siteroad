@@ -1,5 +1,13 @@
 import React from 'react';
 import './geo.css';
+import { SITE_URL } from '../../constants';
+
+const regionsData = [
+    { name: "Ростовская область", emblem: `${SITE_URL}/emblem/rostov.png`, alt: "Эмблема Ростовской области" },
+    { name: "Белгородская область", emblem: `${SITE_URL}/emblem/belgorod.png`, alt: "Эмблема Белгородской области" },
+    { name: "Ульяновская область", emblem: `${SITE_URL}/emblem/ulyanovsk.png`, alt: "Эмблема Ульяновской области" },
+    { name: "Самарская область", emblem: `${SITE_URL}/emblem/samara.png`, alt: "Эмблема Самарской области" },
+];
 
 function GeographyWork() {
     return (
@@ -8,51 +16,19 @@ function GeographyWork() {
                 <article>
                     <div className="regions-container">
                         <ul className="cards-regions">
-                            <li className="card-region">
-                                <div className="card-content">
-                                    <h3 className="card-title">Ростовская</h3>
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/emblem/rostov.png`}
-                                        alt="Эмблема Ростовской области"
-                                        className="card-image"
-                                    />
-                                    <h3 className="card-title">Область</h3>
-                                </div>
-                            </li>
-                            <li className="card-region">
-                                <div className="card-content">
-                                    <h3 className="card-title">Белгородская</h3>
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/emblem/belgorod.png`}
-                                        alt="Эмблема Белгородской области"
-                                        className="card-image"
-                                    />
-                                    <h3 className="card-title">Область</h3>
-                                </div>
-                            </li>
-                            <li className="card-region">
-                                <div className="card-content">
-                                    <h3 className="card-title">Ульяновская</h3>
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/emblem/ulyanovsk.png`}
-                                        alt="Эмблема Ульяновской области"
-                                        className="card-image"
-                                    />
-                                    <h3 className="card-title">Область</h3>
-                                </div>
-                            </li>
-                            <li className="card-region">
-                                <div className="card-content">
-                                    <h3 className="card-title">Самарская</h3>
-                                    <img
-                                        src={`${process.env.PUBLIC_URL}/emblem/samara.png`}
-                                        alt="Эмблема Удмуртской Республики"
-                                        className="card-image"
-                                    />
-                                    <h3 className="card-title">Область</h3>
-                                </div>
-                            </li>
-
+                            {regionsData.map((region, index) => (
+                                <li className="card-region" key={index}>
+                                    <div className="card-content">
+                                        <h3 className="card-title">{region.name.replace(' область', '')}</h3>
+                                        <img
+                                            src={region.emblem}
+                                            alt={region.alt}
+                                            className="card-image"
+                                        />
+                                        <h3 className="card-title">Область</h3>
+                                    </div>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </article>

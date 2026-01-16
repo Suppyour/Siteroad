@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link, useLocation } from "react-router-dom";
+import { SITE_URL } from '../constants';
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ const Navbar = () => {
         <header className={`navbar ${navClass}`}>
             <div className="navbar-nav">
                 <div className="navbar-logo">
-                    <Link to="/" onClick={toggleMenu}><img src={`${process.env.PUBLIC_URL}/logo/logo192_negate.png`} alt="Logo" /></Link>
+                    <Link to="/" onClick={toggleMenu}><img src={`${SITE_URL}/logo/logo192_negate.png`} alt="Logo" /></Link>
                 </div>
 
                 <button className={`burger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>

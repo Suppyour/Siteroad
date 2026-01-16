@@ -1,111 +1,184 @@
-.content-container {
+/* Mobile First Strategy */
+:root {
+    --primary-color: #FDB10C;
+    --primary-hover: #b08118;
+    --text-main: #FFFFFF;
+    --text-secondary: #D6D2D2;
+    --btn-height: 55px; /* min 44px for touch */
+}
+
+/* Container Reset */
+.home-container {
+    position: relative;
     width: 100%;
-    height: 92vh;
-    margin: 0;
-    padding: 2%;
+    min-height: 100vh; /* Fallback */
+    min-height: 100dvh; /* Dynamic viewport height for mobile browsers */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: left;
-    border-radius: 1%;
+    overflow: hidden;
+    padding: 0;
+    /* Ensure no margin/padding leaks from global resets */
+    box-sizing: border-box;
 }
 
+/* Video Background */
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures video covers area without distortion */
+}
+
+/* Optional Overlay for better text contrast if needed */
+.video-background .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Darkens background by 40% */
+}
+
+/* Content Wrapper */
+.home-content {
+    position: relative;
+    z-index: 1; /* Above video */
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem;
+    color: var(--text-main);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center by default on mobile */
+    text-align: center;
+}
+
+/* Typography */
 .main-title {
-    font-size: 3vw;
-    font-weight: bold;
-    text-align: left;
-    color: white;
-    margin: 0;
-    padding-left: 10%;
+    /* Using clamp for smooth scaling between breakpoints */
+    /* Min: 1.8rem, Preferred: 5vw + 1rem, Max: 4.5rem */
+    font-size: clamp(1.8rem, 5vw + 1rem, 4.5rem);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
 }
 
-.text {
-    font-size: 2.5vw;
-    line-height: 1.5;
-    color: #D6D2D2;
-    text-align: left;
-    padding-left: 10%;
-}
 .highlight {
-    color: #FDB10C; /* тэг для автомобильных */
+    color: var(--primary-color);
+}
+
+.text-block {
+    /* Fluid font size for description */
+    font-size: clamp(1rem, 2vw + 0.5rem, 1.5rem);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+}
+
+.text-block p {
+    margin: 0.5rem 0;
+}
+
+/* Interactive Elements - Buttons */
+.buttons-row {
+    display: flex;
+    flex-direction: column; /* Stack vertically on mobile */
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px; /* Limit width on mobile */
 }
 
 .button {
-    background-color: #FDB10C;
-    border: none;
-    color: white;
-    text-align: center;
-    font-size: 1.5vw;
-    font-weight: bolder;
-    border-radius: 5vw;
-    transition: background-color 0.3s, transform 0.2s;
-    cursor: pointer;
-    width: 15vw;
-    height: 4vw;
-    margin-top: 2vw;
-    margin-left: 10%;
-    display: flex;
-    justify-content: center;
+    display: inline-flex;
     align-items: center;
-    text-decoration: none; /* Убирает подчеркивание */
+    justify-content: center;
+    height: var(--btn-height);
+    padding: 0 2rem;
+    border-radius: 50px;
+    font-size: 1.125rem; /* ~18px */
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%; /* Full width on mobile */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
 
-
-.buttons-row {
-    display: flex;
-    flex-wrap: wrap;
+.button.primary {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
 }
 
-.button:hover {
-    background-color: #b08118;
+.button.primary:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.button.secondary {
+    background-color: transparent; /* Or semi-transparent white */
+    color: #FFFFFF;
+    border: 2px solid var(--primary-color);
+}
+
+.button.secondary:hover {
+    background-color: rgba(253, 177, 12, 0.1);
+    transform: translateY(-2px);
 }
 
 .button:active {
-    background-color: rgba(0, 0, 0, 0.47);
+    transform: translateY(0);
 }
 
-.button:disabled {
-    background-color: #cccccc;
-    color: #666666;
-    cursor: not-allowed;
-}
+/* MEDIA QUERIES (Mobile First override) */
 
-@media (max-width: 768px) {
-    .content-container {
-        padding: 25% 5%;
-        height: auto;
-        text-align: center;
-    }
-
-    .main-title {
-        font-size: 6vw;
-        text-align: center;
-        padding-left: 0;
-    }
-
-    .text {
-        font-size: 4vw;
-        padding-left: 0;
-        text-align: center;
+/* Tablet Portrait (approx 768px+) */
+@media (min-width: 768px) {
+    .home-content {
+        align-items: flex-start; /* Align left */
+        text-align: left;
+        padding-left: 5vw; /* Breathing room */
     }
 
     .buttons-row {
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-        margin-top: 1.5rem;
+        flex-direction: row;
+        width: auto;
+        max-width: none;
+        gap: 1.5rem;
     }
 
     .button {
-        font-size: 4vw;
-        width: 70vw;
-        height: 12vw;
-        margin-left: 0;
+        width: auto; /* Buttons take natural width */
+        min-width: 200px;
     }
+}
 
-    .video video {
-        object-fit: cover;
-        width: 100%;
-        height: 40vh;
+/* Laptop (1024px+) */
+@media (min-width: 1024px) {
+    .home-content {
+        padding-left: 10vw;
+        max-width: 1200px; /* Limit content width */
+        margin: 0 auto 0 0; /* Keeps it left aligned relative to screen, but distinct */
+    }
+}
+
+/* Desktop Large (1440px+) */
+@media (min-width: 1440px) {
+    .main-title {
+        font-size: 4.5rem; /* Cap font size */
+    }
+    
+    .home-content {
+        padding-left: 15vw;
     }
 }

@@ -4,7 +4,7 @@ import DiagnosticItem from "./DiagnosticItem";
 function Passport() {
     const diagnosticData2 = {
         title: 'ПАСПОРТИЗАЦИЯ АВТОМОБИЛЬНЫХ ДОРОГ',
-        imageSrc: 'photo/ServicePhoto/pasport.png',
+        imageSrc: process.env.PUBLIC_URL + '/photo/ServicePhoto/pasport.png',
         imageAlt: 'Фото диагностики',
         description: `Результатом работ будет являться паспорт с подробной информацией об технических характеристиках исследуемой дороги. 
      При обследовании дороги применяются сертифицированные и поверенные комплексы измерительных аэродромно-дорожных лабораторий.`,

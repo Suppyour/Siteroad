@@ -10,10 +10,10 @@ function Footer() {
                 <a href="/equipment">Оборудование</a>
                 <div className="social-icons">
                     <a href="https://telegram.org" target="_blank" rel="noopener noreferrer">
-                        <img src="/logo/telegram.png" alt="Telegram" />
+                        <img src={`${process.env.PUBLIC_URL}/logo/telegram.png`} alt="Telegram" />
                     </a>
                     <a href="https://whatsapp.com" target="_blank" rel="noopener noreferrer">
-                        <img src="/logo/whatsapp.png" alt="WhatsApp" />
+                        <img src={`${process.env.PUBLIC_URL}/logo/whatsapp.png`} alt="WhatsApp" />
                     </a>
                 </div>
                 <ul className="contact-list">

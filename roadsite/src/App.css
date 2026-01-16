@@ -1,14 +1,30 @@
+/* Global CSS Variables for consistency */
+:root {
+    --primary-color: #FDB10C;
+    --text-dark: #333333;
+    --text-light: #F5F5F5;
+}
+
 .page-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Background for all pages EXCEPT Home */
+.page-container.global-bg {
+    background-image: url('./Pages/General/backgroundPhoto.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .content {
     flex: 1;
-    padding: 1rem;
-    max-width: 1920px;
     width: 100%;
+    /* Removed padding: 1rem; to allow full-width components */
+    /* Removed max-width: 1920px; to allow fluid resizing */
     margin: 0 auto;
 }

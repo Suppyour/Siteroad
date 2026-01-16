@@ -1,17 +1,33 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
+    const isHome = location.pathname === '/';
+    // List of pages where navbar should be transparent to show the background image
+    const transparentRoutes = ['/services', '/documents', '/regions', '/contacts', '/portfolio', '/vacancies',
+        '/diagnostic', '/passport', '/georadar', '/monitoring', '/axial_loads', '/ksodd', '/bridge', '/safety', '/geodesy'];
+    const isTransparentConfig = transparentRoutes.includes(location.pathname);
+
+    // Determine class: 
+    // - on Home: 'navbar-home' (absolute, top, overlay video)
+    // - on Others: 'navbar-transparent' (relative/static, transparent bg, shows global-bg)
+    let navClass = '';
+    if (isHome) {
+        navClass = 'navbar-home'; // Overlay video
+    } else if (isTransparentConfig) {
+        navClass = 'navbar-transparent'; // Show background image
+    }
 
     const toggleMenu = () => setMenuOpen(!menuOpen);
 
     return (
-        <header className="navbar">
+        <header className={`navbar ${navClass}`}>
             <div className="navbar-nav">
                 <div className="navbar-logo">
-                    <Link to="/" onClick={toggleMenu}><img src="/logo/logo192_negate.png" alt="Logo" /></Link>
+                    <Link to="/" onClick={toggleMenu}><img src={`${process.env.PUBLIC_URL}/logo/logo192_negate.png`} alt="Logo" /></Link>
                 </div>
 
                 <button className={`burger ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>

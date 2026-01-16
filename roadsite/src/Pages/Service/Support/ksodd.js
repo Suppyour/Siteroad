@@ -4,7 +4,7 @@ import DiagnosticItem from "./DiagnosticItem";
 function Ksodd() {
     const diagnosticData6 = {
         title: 'РАЗРАБОТКА КСОДД',
-        imageSrc: 'photo/ServicePhoto/ksodd.png',
+        imageSrc: process.env.PUBLIC_URL + '/photo/ServicePhoto/ksodd.png',
         imageAlt: 'Фото диагностики',
         description: `КСОДД - это комплексная схема организации дорожного движения, которая является ключевым инструментом управления и развития 
         транспортной системы города или региона. Этот документ определяет основные направления и мероприятия по улучшению безопасности и эффективности 

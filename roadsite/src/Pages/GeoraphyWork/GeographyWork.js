@@ -12,9 +12,9 @@ function GeographyWork() {
                                 <div className="card-content">
                                     <h3 className="card-title">Ростовская</h3>
                                     <img
-                                         src="/emblem/rostov.png"
-                                         alt="Эмблема Ростовской области"
-                                         className="card-image"
+                                        src={`${process.env.PUBLIC_URL}/emblem/rostov.png`}
+                                        alt="Эмблема Ростовской области"
+                                        className="card-image"
                                     />
                                     <h3 className="card-title">Область</h3>
                                 </div>
@@ -23,7 +23,7 @@ function GeographyWork() {
                                 <div className="card-content">
                                     <h3 className="card-title">Белгородская</h3>
                                     <img
-                                        src="/emblem/belgorod.png"
+                                        src={`${process.env.PUBLIC_URL}/emblem/belgorod.png`}
                                         alt="Эмблема Белгородской области"
                                         className="card-image"
                                     />
@@ -34,7 +34,7 @@ function GeographyWork() {
                                 <div className="card-content">
                                     <h3 className="card-title">Ульяновская</h3>
                                     <img
-                                        src="/emblem/ulyanovsk.png"
+                                        src={`${process.env.PUBLIC_URL}/emblem/ulyanovsk.png`}
                                         alt="Эмблема Ульяновской области"
                                         className="card-image"
                                     />
@@ -45,7 +45,7 @@ function GeographyWork() {
                                 <div className="card-content">
                                     <h3 className="card-title">Самарская</h3>
                                     <img
-                                        src="/emblem/samara.png"
+                                        src={`${process.env.PUBLIC_URL}/emblem/samara.png`}
                                         alt="Эмблема Удмуртской Республики"
                                         className="card-image"
                                     />
